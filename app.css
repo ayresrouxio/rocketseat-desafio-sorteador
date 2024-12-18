@@ -7,5 +7,23 @@
 
 /* Root */
 :root {
+  --content-primary: #ffffff;
+  --bg-primary: #020202;
+
   font-size: 62.5%; /* 10px */
+}
+
+/* General */
+body {
+  font-size: 1.6rem;
+  color: var(--content-primary);
+  background-color: var(--bg-primary);
+}
+
+/* Page */
+#page {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 4.4rem 3.5rem;
 }

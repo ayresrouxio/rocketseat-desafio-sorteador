@@ -1,0 +1,11 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root */
+:root {
+  font-size: 62.5%; /* 10px */
+}

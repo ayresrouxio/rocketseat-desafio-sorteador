@@ -13,6 +13,7 @@
   --content-primary: #ffffff;
   --content-secondary: #c7c9cc;
   --content-tertiary: #d9d9d9;
+  --content-brand: #c58de7;
   --bg-primary: #020202;
   --bg-secondary: #161518;
   --bg-tertiary: #24222e;
@@ -197,4 +198,37 @@ p {
   min-height: 5.6rem;
   cursor: pointer;
   margin-top: 4rem;
+}
+
+/* Faq */
+.faq {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.faq-item {
+  position: relative;
+  padding-left: 2.8rem;
+}
+
+.faq-item img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.faq-item h3 {
+  font-size: 1.4rem;
+  color: var(--content-brand);
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.faq-item p {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--content-secondary);
 }

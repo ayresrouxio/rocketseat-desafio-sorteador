@@ -60,6 +60,10 @@ p {
   color: var(--content-secondary);
 }
 
+.hide {
+  display: none;
+}
+
 /* Page */
 #page {
   width: 100%;
@@ -243,7 +247,6 @@ p {
 .result {
   margin: 7rem 0;
   text-align: center;
-  display: none;
 }
 
 .result h3 {
@@ -295,8 +298,11 @@ p {
     font-size: 7.2rem;
   }
 
+  .result,
   .form {
     grid-area: C;
+
+    width: 482px;
     margin-left: 10rem;
     margin-top: 3.4rem;
   }

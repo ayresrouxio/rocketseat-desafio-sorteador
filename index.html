@@ -42,13 +42,13 @@
           </div>
 
           <div class="form-field">
-            <label class="label-big" for="numbers-start">De</label>
-            <input type="text" id="numbers-start" value="1" />
+            <label class="label-big" for="numberMin">De</label>
+            <input type="text" id="numberMin" value="1" />
           </div>
 
           <div class="form-field">
-            <label class="label-big" for="numbers-end">Até</label>
-            <input type="text" id="numbers-end" value="100" />
+            <label class="label-big" for="numberMax">Até</label>
+            <input type="text" id="numberMax" value="100" />
           </div>
         </div>
 
@@ -63,14 +63,11 @@
         </button>
       </form>
 
-      <section class="result">
+      <section class="result hide">
         <h2>Resultado do Sorteio</h2>
         <h3 class="overline">1º resultado</h3>
-        <div class="result-numbers">
-          <span>23</span>
-          <span>12</span>
-        </div>
-        <button class="btn">
+        <div class="result-numbers"></div>
+        <button class="btn" id="reset">
           Sortear Novamente
           <img src="./assets/replay.svg" alt="Ícone de Replay" />
         </button>

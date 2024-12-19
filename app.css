@@ -52,6 +52,14 @@ p {
   color: var(--content-tertiary);
 }
 
+.overline {
+  display: block;
+  font-family: var(--font-prominent);
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--content-secondary);
+}
+
 /* Page */
 #page {
   width: 100%;
@@ -70,12 +78,8 @@ p {
 .hero {
   margin: 4.6rem 0 4.2rem 0;
 }
-.hero strong {
-  display: block;
-  font-family: var(--font-prominent);
-  line-height: 150%;
-  text-transform: uppercase;
 
+.hero .overline {
   background: linear-gradient(90deg, #c7c9cc 0%, #3d3d3d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -92,7 +96,8 @@ p {
 }
 
 /* Form */
-.form h2 {
+.form h2,
+.result h2 {
   font-family: var(--font-content);
   font-size: 2rem;
   line-height: 150%;
@@ -181,14 +186,15 @@ p {
   left: 12px;
 }
 
-.form button {
+/* Buttons */
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   width: 100%;
   font-size: 2rem;
-  color: var(--content-primary);
+  color: var(--content-tertiary);
   line-height: 150%;
   font-weight: bold;
   text-transform: uppercase;
@@ -231,4 +237,32 @@ p {
   line-height: 150%;
   font-weight: 500;
   color: var(--content-secondary);
+}
+
+/* Result */
+.result {
+  margin: 7rem 0;
+  text-align: center;
+  display: none;
+}
+
+.result h3 {
+  margin: 0.5rem 0;
+}
+
+.result-numbers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 4rem 0;
+}
+
+.result-numbers span {
+  display: block;
+  width: 84px;
+  font-family: var(--font-prominent);
+  font-weight: bold;
+  font-size: 4.8rem;
+  color: var(--content-brand);
 }

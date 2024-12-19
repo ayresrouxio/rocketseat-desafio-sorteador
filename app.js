@@ -21,7 +21,15 @@ numberMax.oninput = () => {
 
 form.onsubmit = (event) => {
   event.preventDefault()
-  handleDraw()
+  if (
+    validateForm(
+      Number(numbers.value),
+      Number(numberMin.value),
+      Number(numberMax.value)
+    )
+  ) {
+    handleDraw()
+  }
 }
 
 reset.onclick = () => {
@@ -41,12 +49,7 @@ function handleDraw() {
       Math.floor(Math.random() * Number(numberMax.value)) +
       Number(numberMin.value)
 
-    if (repeat.checked) {
-      if (!drawNumbers.includes(randomNumber)) {
-        drawNumbers.push(randomNumber)
-        addDrawNumber(randomNumber)
-      }
-    } else {
+    if (!repeat.checked || !drawNumbers.includes(randomNumber)) {
       drawNumbers.push(randomNumber)
       addDrawNumber(randomNumber)
     }
@@ -65,4 +68,33 @@ function addDrawNumber(randomNumber) {
   number.textContent = randomNumber
 
   resultNumbers.append(number)
+}
+
+function validateForm(numbers, numberMin, numberMax) {
+  if (numbers <= 0) {
+    alert("A quantidade de números deve ser superior a 0 (zero)")
+    return false
+  }
+
+  if (numbers > numberMax) {
+    alert("A quantidade de números não pode ser maior que o número máximo.")
+    return false
+  }
+
+  if (numberMin > numberMax) {
+    alert("O número mínimo não pode ser maior que o número máximo.")
+    return false
+  }
+
+  if (numberMin <= 0) {
+    alert("O número mínimo não pode ser menor ou igual a 0 (zero)")
+    return false
+  }
+
+  if (numberMax > 999) {
+    alert("O número máximo não pode ser maior que 999")
+    return false
+  }
+
+  return true
 }

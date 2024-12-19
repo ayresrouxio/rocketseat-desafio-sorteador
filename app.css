@@ -14,6 +14,7 @@
   --content-secondary: #c7c9cc;
   --content-tertiary: #d9d9d9;
   --content-brand: #c58de7;
+  --content-brand-hover: #a819ff;
   --bg-primary: #020202;
   --bg-secondary: #161518;
   --bg-tertiary: #24222e;
@@ -208,6 +209,20 @@ p {
   min-height: 5.6rem;
   cursor: pointer;
   margin-top: 4rem;
+  transition: all ease 300ms;
+}
+
+.btn:hover {
+  background-color: var(--content-brand-hover);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Faq */

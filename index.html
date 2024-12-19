@@ -23,84 +23,82 @@
         <img src="./assets/logo.svg" alt="Logo Numbers" />
       </header>
 
-      <main>
-        <section class="hero">
-          <strong class="overline">Online - Gratuito</strong>
-          <h1>Sorteador de números</h1>
-        </section>
+      <section class="hero">
+        <strong class="overline">Online - Gratuito</strong>
+        <h1>Sorteador de números</h1>
+      </section>
 
-        <form class="form">
-          <h2>Quero sortear:</h2>
+      <form class="form">
+        <h2>Quero sortear:</h2>
+        <p>
+          Defina o intervalo e a quantidade de números, clique em "Sortear" e
+          veja os resultados na tela. É rápido e fácil!
+        </p>
+
+        <div class="form-wrapper">
+          <div class="form-field">
+            <label class="label-big" for="numbers">Números</label>
+            <input type="text" id="numbers" value="2" />
+          </div>
+
+          <div class="form-field">
+            <label class="label-big" for="numbers-start">De</label>
+            <input type="text" id="numbers-start" value="1" />
+          </div>
+
+          <div class="form-field">
+            <label class="label-big" for="numbers-end">Até</label>
+            <input type="text" id="numbers-end" value="100" />
+          </div>
+        </div>
+
+        <div class="form-toggle">
+          <input type="checkbox" id="repeat" checked />
+          <label for="repeat">Não repetir número</label>
+        </div>
+
+        <button class="btn">
+          Sortear
+          <img src="./assets/arrow-right.svg" alt="->" />
+        </button>
+      </form>
+
+      <section class="result">
+        <h2>Resultado do Sorteio</h2>
+        <h3 class="overline">1º resultado</h3>
+        <div class="result-numbers">
+          <span>23</span>
+          <span>12</span>
+        </div>
+        <button class="btn">
+          Sortear Novamente
+          <img src="./assets/replay.svg" alt="Ícone de Replay" />
+        </button>
+      </section>
+
+      <section class="faq">
+        <div class="faq-item">
+          <img src="./assets/question.svg" alt="icone de pergunta" />
+
+          <h3>Como funciona o sorteador de números?</h3>
+
           <p>
-            Defina o intervalo e a quantidade de números, clique em "Sortear" e
-            veja os resultados na tela. É rápido e fácil!
+            O sorteador utiliza um algoritmo de geração aleatória para criar
+            números dentro do intervalo especificado pelo usuário.
           </p>
+        </div>
 
-          <div class="form-wrapper">
-            <div class="form-field">
-              <label class="label-big" for="numbers">Números</label>
-              <input type="text" id="numbers" value="2" />
-            </div>
+        <div class="faq-item">
+          <img src="./assets/question.svg" alt="icone de pergunta" />
 
-            <div class="form-field">
-              <label class="label-big" for="numbers-start">De</label>
-              <input type="text" id="numbers-start" value="1" />
-            </div>
+          <h3>Posso escolher o intervalo dos números?</h3>
 
-            <div class="form-field">
-              <label class="label-big" for="numbers-end">Até</label>
-              <input type="text" id="numbers-end" value="100" />
-            </div>
-          </div>
-
-          <div class="form-toggle">
-            <input type="checkbox" id="repeat" checked />
-            <label for="repeat">Não repetir número</label>
-          </div>
-
-          <button class="btn">
-            Sortear
-            <img src="./assets/arrow-right.svg" alt="->" />
-          </button>
-        </form>
-
-        <section class="result">
-          <h2>Resultado do Sorteio</h2>
-          <h3 class="overline">1º resultado</h3>
-          <div class="result-numbers">
-            <span>23</span>
-            <span>12</span>
-          </div>
-          <button class="btn">
-            Sortear Novamente
-            <img src="./assets/replay.svg" alt="Ícone de Replay" />
-          </button>
-        </section>
-
-        <section class="faq">
-          <div class="faq-item">
-            <img src="./assets/question.svg" alt="icone de pergunta" />
-
-            <h3>Como funciona o sorteador de números?</h3>
-
-            <p>
-              O sorteador utiliza um algoritmo de geração aleatória para criar
-              números dentro do intervalo especificado pelo usuário.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <img src="./assets/question.svg" alt="icone de pergunta" />
-
-            <h3>Posso escolher o intervalo dos números?</h3>
-
-            <p>
-              Sim, você pode definir os valores mínimo e máximo para o intervalo
-              dos números sorteados.
-            </p>
-          </div>
-        </section>
-      </main>
+          <p>
+            Sim, você pode definir os valores mínimo e máximo para o intervalo
+            dos números sorteados.
+          </p>
+        </div>
+      </section>
     </div>
     <script src="./app.js"></script>
   </body>

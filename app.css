@@ -11,8 +11,10 @@
   --font-content: "Roboto Flex", serif;
   --font-prominent: "Roboto Mono", serif;
   --content-primary: #ffffff;
+  --content-secondary: #c7c9cc;
   --content-tertiary: #d9d9d9;
   --bg-primary: #020202;
+  --bg-secondary: #161518;
 
   font-size: 62.5%; /* 10px */
 }
@@ -89,4 +91,37 @@ p {
   line-height: 150%;
   text-transform: uppercase;
   margin-bottom: 2px;
+}
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 92px);
+  gap: 1.2rem;
+  margin: 4rem 0 2rem 0;
+  text-align: center;
+}
+
+.label-big {
+  display: block;
+  font-size: 2rem;
+  color: var(--content-secondary);
+  line-height: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.form input {
+  width: 86px;
+  height: 56px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--bg-secondary);
+  font-family: var(--font-headings);
+  font-size: 3.2rem;
+  color: var(--content-primary);
+  line-height: 130%;
+  font-weight: bold;
+  padding: 4px 8px;
+  text-align: center;
 }
